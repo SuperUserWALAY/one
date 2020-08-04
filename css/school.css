@@ -1,0 +1,96 @@
+/* 闲置捐赠 预约页面 */
+.active{
+    margin:10px auto;
+    width: 1180px;
+    height: 600px;
+    background-color: #fff;
+    padding: 20px;
+}
+.active_show{
+    width: 1140px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.active_img{
+    float: left;
+    width: 400px;
+    height: 250px;
+    margin: 0px 14px;
+}
+.active_show img{
+    width: 400px;
+    height: 250px;
+    
+    
+}
+.active_mes{
+    float: left;
+    width: 270px;
+    margin-right: 20px;
+}
+
+.active_table{
+    float: left;
+    width: 400px;
+    /* height: 230px; */
+    background-color: skyblue;
+    padding: 4px 10px;
+}
+.active_form {
+    width: 100%;
+    height: 100%;
+}
+ul {
+    height: 100%;
+    line-height: 40px;
+}
+.active_table h2{
+    float: left;
+}
+ .required_notification{
+    float: right;
+}
+/* .active_form li{
+    width: 100%;
+} */
+.active_table  label{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+.active_table ul li {
+    width: 360px;
+    
+}
+.active_table input{
+    width: 200px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.submit{
+    float: right;
+}
+.active_table button{
+    
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 4px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.active_table  button:hover
+{
+	padding: 7px 15px;
+	color: #4CAF50;
+	background-color: #fff;
+	border: 1px solid #4CAF50;
+}

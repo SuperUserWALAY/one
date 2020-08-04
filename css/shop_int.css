@@ -1,0 +1,312 @@
+*:focus {outline: none;}
+.contact{width:880px;background:#F1F1F1;margin:20px auto;padding:10px;}
+
+/* === Form Typography === */
+.contact_form h2{font-size:18px;font-weight:bold;}
+.contact_form label{font-size:14px;}
+.form_hint, .required_notification{font-size: 12px;}
+
+/* === List Styles === */
+.contact_form ul {width:780px;list-style-type:none;list-style-position:outside;padding:0px;}
+.contact_form li{padding:12px; border-bottom:1px solid #DFDFDF;position:relative;} 
+.contact_form li:first-child, .contact_form li:last-child {border-bottom:1px solid #777;}
+
+/* === Form Header === */
+.contact_form h2 {margin:0;display: inline;}
+.required_notification {color:#d45252; margin:5px 0 0 0; display:inline;float:right;}
+
+/* === Form Elements === */
+.contact_form label {width:150px;margin-top: 3px;display:inline-block;float:left;padding:3px;}
+.contact_form input {height:30px; width:220px; padding:5px 8px;}
+.contact_form textarea {padding:8px; width:300px;}
+.contact_form button {margin-left:156px;}
+
+	/* form element visual styles */
+.contact_form input, .contact_form textarea { 
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+	padding-right:30px;
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s;
+	transition: padding .25s;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+	background: #fff url(images/red_asterisk.png) no-repeat; 
+	border:1px solid #555; 
+	box-shadow: 0 0 3px #aaa; 
+	padding-right:70px;
+}
+
+/* === HTML5 validation styles === */	
+.contact_form input:required, .contact_form textarea:required {background: #fff url(images/red_asterisk.png) no-repeat 98% center;}
+.contact_form input:required:valid, .contact_form textarea:required:valid {background: #fff url(images/valid.png) no-repeat 98% center;box-shadow: 0 0 5px #5cd053;border-color: #28921f;}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {background: #fff url(images/invalid.png) no-repeat 98% center;box-shadow: 0 0 5px #d45252;border-color: #b03535;}
+
+/* === Form hints === */
+.form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; 
+	position: absolute; 
+	display: none;
+}
+.form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+.contact_form input:focus + .form_hint {display: inline;}
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+.contact_form input:required:valid + .form_hint::before {color:#28921f;}
+	
+/* === Button Style === */
+button.submit {
+	background-color: #68b12f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+	background: -webkit-linear-gradient(top, #68b12f, #50911e);
+	background: -moz-linear-gradient(top, #68b12f, #50911e);
+	background: -ms-linear-gradient(top, #68b12f, #50911e);
+	background: -o-linear-gradient(top, #68b12f, #50911e);
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	-webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+	-moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-o-box-shadow: 0 1px 0 0 #9fd574 inset;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset; 
+	-webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	-o-box-shadow: 0 0 10px 5px #356b0b inset;
+	
+}
+/* 发布的宝贝 */
+.shop_box{
+	width: 380px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding: 4px;
+	float: left;
+	margin: 10px;
+}
+.shop_eit{
+	width: 370px;
+	height: 200px;
+	/* background-color: rgb(226, 66, 66); */
+	letter-spacing: 1px;
+	padding: 4px;
+	border-bottom: 1px solid grey;
+}
+.shop_eit img{
+	float: left;
+	width: 190px;
+	height: 190px;
+}
+.shop_mes{
+	float: left;
+	width: 150px;
+	height: 130px;
+	/* background-color: pink; */
+	padding: 10px;
+	line-height: 36px;
+}
+.shop_mes h3{
+	font-weight: normal;
+	font-size: 26px;
+	
+	
+}
+.shop_mes span{
+	color: chocolate;
+	font-size: 30px;	
+} 
+.shop_mes p{
+	color: darkgrey;
+	font-size: 14px;
+}
+.shop_eits button,.buy_box button{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 4px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.shop_eits button:last-child,
+.buy_box button:last-child
+{
+	float: right;
+}
+.shop_eits button:hover,
+.buy_box  button:hover
+{
+	padding: 7px 15px;
+	color: #4CAF50;
+	background-color: #fff;
+	border: 1px solid #4CAF50;
+}
+/* 我的收藏 */
+
+.liker{
+	width: 380px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding: 4px;
+	float: left;
+	margin: 10px;
+}
+/* 收藏宝贝 */
+
+.shop_like span{
+	line-height: 50px;
+	position: absolute;
+	left: 60px;
+} 
+/* 我的交易 */
+.buy{
+	width: 390px;
+	height: 500px;
+	float: left;
+	/* background:rgb(118, 210, 235); */
+	margin-right: 20px;
+	padding: 4px;
+}
+
+
+.buy h2, .sale h2{
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+	color: #1fc7d8;
+
+}
+.buy_box{
+	width: 380px;
+	height: 230px;
+	border: 1px solid rgb(182, 180, 180);
+	border-radius: 16px;
+	padding:10px 4px;
+	margin-top: 10px;
+}
+.buyer{
+	width: 330px;
+	height: 40px;
+	padding: 6px 20px;
+	border-bottom: 1px solid rgb(240, 235, 235);
+	
+}
+.buyer img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	border-radius: 50%;
+	margin-right:5px ;
+}
+.buyer h3{
+	width: 70px;
+	float: left;
+	line-height: 40px;
+}
+.buyer span{
+	color: red;
+	font-size: 16px;
+	float: right;
+	line-height: 40px;
+}
+.buy_shop{
+	width: 330px;
+	height: 120px;
+	padding: 10px 20px;
+	position: relative;
+}
+.buy_shop img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 5px;
+}
+.buy_shop h3{
+	/* width: 200px; */
+	float: left;
+}
+.buy_shop p{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.buy_shop p span{
+	color: rgb(245, 87, 24);
+	font-size: 20px;
+}
+.sale{
+	width:390px;
+	height: 560px;
+	float: left;
+	background-color: pink;	padding: 4px;
+}
+
+/* 评论 */
+.post__comment{
+	position: relative;
+	/* background:rgba(54, 169, 240, 0.5); */
+	width: 800px;
+	height: 150px;
+	margin-top: 10px;
+	padding: 5px;
+	border-bottom: 1px solid gray;
+	
+}
+.post__comment-img img{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+}
+.post__comment-title{
+	position: absolute;
+	margin-left: 100px;
+}
+.post__comment-title p{
+	line-height: 26px;
+
+}
+.post__comment-text {
+	/* width: 90%; */
+	position: absolute;
+	margin-top: 90px;
+	line-height: 30px;
+	font-size: 16px;
+	background-color: #fff;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园转转</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+        <!-- 小米轮播 -->
+        <script type="text/javascript" src="js/jquery18.js"></script>
+
+<script type="text/javascript" src="js/slides.js"></script>
+<script type="text/javascript">
+    $(function () {
+        
+        var winw = parseInt($(window).width());
+        $(' .navbar .box').css({'padding-left':(winw-960)/2,'padding-right':(winw-960)/2,'margin-left':-(winw-960)/2});
+        
+        var navLi=$(" .navbar li");
+        navLi.mouseover(function () {
+            $(this).find("a").addClass("current");
+            $(this).find(".box").stop().slideDown(200);
+        })
+        navLi.mouseleave(function(){
+            $(this).find("a").removeClass("current");
+            $(this).find(".box").stop().slideUp(200);
+        })
+    })
+    </script>
+<script type="text/javascript">
+$(function(){
+
+	$("#xmSlide").xmSlide({
+		width: 950,
+		height: 700,
+		responsiveWidth:710,
+		pagination: {
+			effect: "slide"  //可换成"fade"
+		},
+		effect: {
+			fade: {
+				speed: 400
+			}
+		},
+		play: {
+			effect: "slide", //可换成"fade"
+			interval: 4000,
+			auto: true,
+			pauseOnHover: true,
+			restartDelay: 2500
+		}
+	});
+});
+
+</script>
+</head>
+<body>
+    
+    <!-- 页面头部分 -->
+    <header>
+        <nav>
+        <!-- logo部分 -->
+        <div class="logo pull-left">
+            <img src="images/logo_03.png" alt="">
+        </div>
+        <!-- 导航栏 -->
+        <div class="navbar pull-right">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">二手书籍</a>
+                    <div class="box">
+                        <a href="#">学科教材</a>
+                        <a href="#">热门小说</a>
+                        <a href="#">考试辅导</a>
+                        <a href="#">人文社科</a>
+                        <a href="#">青春文学</a>
+                    </div>
+                </li>
+                <li><a href="#">生活闲置</a>
+                    <div class="box">
+                        <a href="#">自行车</a>
+                        <a href="#">美妆护肤</a>
+                        <a href="#">电器数码</a>
+                        <a href="#">闲置衣物</a>
+                        <a href="#">家具杂物</a>
+                    </div>
+                </li>
+                <li><a href="school.html">闲置捐赠</a></li>
+                
+            </ul>
+        </div>
+        <!-- 个人中心部分 -->
+        <div class="personal">
+            <a href="person.html">发布闲置<img src="images/ling.png" alt=""></a>
+            <a href="person.html"><img class="tuo" src="images/tuo.png" alt="">古川柠夏</a>
+        </div>
+            <!-- 搜索框部分 -->
+        <div class="search">
+            <form action="">
+                <input type="text" placeholder="请输入关键词"> <!-- 占位符 -->
+                <input type="submit" value="">
+            </form>
+        </div>
+        </nav>
+    </header>
+    <!-- banner轮播图 -->
+    <div class="focus">
+
+        <div id="xmSlide" class="xmSlide">
+      
+          <div class="xmSlide_01"></div>
+      
+          <div class="xmSlide_02"></div>
+      
+          <div class="xmSlide_03"></div>
+      
+        </div>
+      
+      
+      </div>
+   
+    <!-- 学院交流 -->
+	<div class="reconmmend container">
+		<a href="#">学院交流</a>
+		<a href="#">金融学院</a>
+		<a href="#">会计学院</a>
+		<a href="#">信工学院</a>
+		<a href="#">艺术学院</a>
+		<a href="#">法学院</a>
+        <a href="#">外国语学院</a>
+        <a href="#">管理学院</a>
+		<a href="#"></a>
+    </div>
+    <!-- 商品推荐 -->
+    <div class="recm_pd container clearfix">
+		<div class="recm_hd ">
+			<h4>猜你喜欢</h4>
+			<a href="#">查看全部</a>
+        </div>
+        <!-- 商品列表 -->
+        <div class="recm_bd">
+            <ul>
+				<li> 
+					<a href="shop.html"><img  src="images/a1.png" alt=""></a>
+					<h5>全新 鼠标 鼠标垫</h5>
+                    <p><span>¥10</span><button>我想要</button></p>
+                    <p><a href="person.html"><img class="touxian" src="images/tx1.png" alt="">John Doe</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop2.jpg" alt=""></a>
+					<h5>线性代数 20栋面交</h5>
+                    <p><span>¥10</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx2.png" alt="">小飞猪</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop3.jpg" alt=""></a>
+					<h5>课本 概率论 自提</h5>
+                    <p><span>¥10</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx3.png" alt="">哆啦A梦</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop4.jpg" alt=""></a>
+					<h5>金融学院微积分 20栋面交</h5>
+                    <p><span>¥10</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx4.png" alt="">MAO</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop5.jpg" alt=""></a>
+					<h5>二手自行车 自提</h5>
+                    <p><span>¥50</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx5.png" alt="">南笙</a></p>
+                </li>
+                <li> 
+					<a href="shop.html"><img  src="images/shop6.jpg" alt=""></a>
+					<h5>全新 口红</h5>
+                    <p><span>¥50</span><button>我想要</button></p>
+                    <p><a href="person.html"><img class="touxian" src="images/tx1.png" alt="">John Doe</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop7.jpg" alt=""></a>
+					<h5>白夜行 20栋面交</h5>
+                    <p><span>¥10</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx2.png" alt="">小飞猪</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop8.jpg" alt=""></a>
+					<h5>解忧杂货店 自提</h5>
+                    <p><span>¥10</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx3.png" alt="">哆啦A梦</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop9.jpg" alt=""></a>
+					<h5>四级词汇</h5>
+                    <p><span>¥5</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx4.png" alt="">MAO</a></p>
+                </li>
+                <li> 
+					<a href=""><img  src="images/shop10.jpg" alt=""></a>
+					<h5>二手 键盘</h5>
+                    <p><span>¥500</span><button>我想要</button></p>
+                    <p><a href=""><img class="touxian" src="images/tx5.png" alt="">南笙</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 校园捐赠 -->
+    <div class="contribute ">
+        <div class="wrap">
+            <div class="pic1 pic">
+                <div class="pic_num1 pic_num"> <a href="school.html"></a></div>
+            </div>
+            <div class="pic2 pic">
+                <div class="pic_num2 pic_num"></div>
+            </div>
+            <div class="pic3 pic">
+                <div class="pic_num3 pic_num"></div>
+            </div>
+            <div class="pic4 pic">
+                <div class="pic_num4 pic_num"></div>
+            </div>
+            <div class="pic5 pic">
+                <div class="pic_num5 pic_num"></div>
+            </div>
+            <div class="pic6 pic">
+                <div class="pic_num6 pic_num"></div>
+            </div> 
+        </div>
+    </div>
+    	<!-- 底部 -->
+	<footer>
+		<div class="footer_in container">
+			<div class="footer-l">
+				<img src="images/logo_03.png" alt="">
+				<p>校园转转致力于环保地球 重买卖做起！<br/> © 2020年全能ACE古川柠夏LJN保留所有权利。 -沪AAAAAAA</p>
+				<a href="#">下载APP</a>
+			</div>
+			<div class="footer-r">
+				<dl>
+					<dt>关于校园转转</dt>
+					<dd><a href="#">关于</a></dd>
+					<dd><a href="#">管理团队</a></dd>
+					<dd><a href="#">工作机会</a></dd>
+					<dd><a href="#">客户服务</a></dd>
+					<dd><a href="#">帮助</a></dd>
+				</dl>
+				<dl>
+					<dt>关于校园转转</dt>
+					<dd><a href="#">关于</a></dd>
+					<dd><a href="#">管理团队</a></dd>
+					<dd><a href="#">工作机会</a></dd>
+					<dd><a href="#">客户服务</a></dd>
+					<dd><a href="#">帮助</a></dd>
+				</dl>
+				<dl>
+					<dt>关于校园转转</dt>
+					<dd><a href="#">关于</a></dd>
+					<dd><a href="#">管理团队</a></dd>
+					<dd><a href="#">工作机会</a></dd>
+					<dd><a href="#">客户服务</a></dd>
+					<dd><a href="#">帮助</a></dd>
+				</dl>
+			</div>
+			
+
+		</div>
+	</footer>
+</body>
+</html>

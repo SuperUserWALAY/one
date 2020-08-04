@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闲置详情</title>
+    <link rel="stylesheet" href="css/AllUse.css">
+    <link rel="stylesheet" href="css/shops.css">
+    <link rel="stylesheet" type="text/css" href="font_Icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <!-- 放大镜 -->
+    <link href="css/jquery.exzoom.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+		<!-- logo部分 -->
+		<nav>
+			<div class="logo">
+			<img src="images/logo_03.png" alt="">
+			</div>
+			<!-- 导航栏部分 -->
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">二手书籍</a></li>
+                    <li><a href="#">生活闲置</a></li>
+                    <li><a href="school.html">闲置捐赠</a></li>
+				</ul>
+			</div>
+			<!-- 个人中心部分 -->
+			<div class="personal">
+				<a href="person.html">发布闲置<img src="images/ling.png" alt=""></a>
+				<a href="person.html"><img class="tuo"  src="images/tuo.png" alt="">古川柠夏</a>
+			</div>
+			 <!-- 搜索框部分 -->
+			<div class="search">
+				<form action="">
+					<input type="text" placeholder="请输入关键词"> <!-- 占位符 -->
+					<input type="submit" value="">
+				</form>
+			</div>
+			
+		</nav>
+
+    </header>
+    <!-- main -->
+    <div class="container">
+        <!-- 宝贝大图 -->
+        <div class="main main_left">
+            <div class="exzoom" id="exzoom"> 
+                <!--大图区域-->
+                <div class="exzoom_img_box">
+                <ul class='exzoom_img_ul'>
+                    <li><img src="images/a1.png"/></li>
+                    <li><img src="images/a2.png"/></li>
+                    <li><img src="images/a3.png"/></li>
+                    <li><img src="images/a4.png"/></li>
+                    <li><img src="images/a5.png"/></li>
+                    <li><img src="images/a1.png"/></li>
+                    <li><img src="images/a2.png"/></li>
+                    <li><img src="images/a3.png"/></li>
+                    </ul>
+                </div>
+                <!--缩略图导航-->
+                <div class="exzoom_nav"></div>
+                <!--控制按钮-->
+                <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; 
+                </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
+                </div>
+        </div>
+        <!-- 宝贝详情 -->
+        <div class="main main_center">
+            <ul>
+                <li>
+                    <div class="xq"><h1>宝贝详情</h1></div>
+                </li>
+                <li>
+                    <div class="shop_show">
+                        <div class="shop_more">
+                            <h3>全新鼠标 鼠标垫</h3>
+                            <p>标价出 在20栋菜鸟驿站面交<br>
+                            淘宝买回来的，没有用过，清理闲置出！<br> 
+                            不退不换哦！
+                            </p>   
+                        </div>
+                        <div class="shop_like">
+                            <!-- <div class="like"><img src="images/icon_like.png" alt=""></div> -->
+                            <div class="heart " id="like1" rel="like"></div> 
+                            <span>收藏</span> 
+                        </div> 
+                    </div>
+                </li>
+                <li>
+                    <span>发布于2天前</span>
+                </li>
+                <li>
+                    <span>交易地址</span> 广商20栋菜鸟驿站
+                </li>
+                <li>
+                   <span>价格</span> 
+                    ¥10 
+                </li>
+                <li>
+                    <button class="but">与卖家聊聊</button>
+                    <button class="but">立即购买</button>
+                </li>
+                <li>
+                    <img src="images/zf.png" alt="" width="345px" height="70px">
+                </li>
+
+            </ul>
+        </div>   
+        <!-- 个人信息 -->
+        <div class="main main_right">
+
+            <div class="user">
+                <div class="user__head">
+                    <div class="user__img">
+                        <img src="images/user3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="user__title">
+                    <h2>John Doe</h2>
+                    <p>喜欢二次元，东野圭吾，不定期出闲置。</p>
+                </div>
+                <div class="user__btns">
+                    <a href="" class="user__btn user__btn--blue"><span>个人主页</span></a>
+                    <a href="" class="user__btn user__btn--orange"><span>芝麻信用</span></a>
+                </div>
+                <ul class="user__stats">
+                    <li>
+                        <p>Following</p>
+                        <span>26</span>
+                    </li>
+                    <li>
+                        <p>Followers</p>
+                        <span>88</span>
+                    </li>
+                </ul>
+                <a href="" class="sidebox__more">关注卖家</a>
+                <a href="" class="sidebox__more ">卖家来校园转转180天啦，卖出了10件宝贝，收获10条好评！</a>
+               
+            </div>
+        </div>
+       
+    </div>
+    <div class="chatContainer">
+        <div class="chatBtn">
+            <i class="iconfont icon-xiaoxi1"></i>
+        </div>
+        <div class="chat-message-num">10</div>
+        <div class="chatBox" ref="chatBox">
+            <div class="chatBox-head">
+                <div class="chatBox-head-one">
+                    Conversations
+                    <div class="chat-close" style="margin: 10px 10px 0 0;font-size: 14px">关闭</div>
+                </div>
+                <div class="chatBox-head-two">
+                    <div class="chat-return">返回</div>
+                    <div class="chat-people">
+                        <div class="ChatInfoHead">
+                            <img src="images/user3.jpg" alt="头像"/>
+                        </div>
+                        <div class="ChatInfoName">John Doe</div>
+                    </div>
+                    <div class="chat-close">关闭</div>
+                </div>
+            </div>
+            <div class="chatBox-info">
+                <div class="chatBox-list" ref="chatBoxlist">
+                    <div class="chat-list-people">
+                        <div><img src="images/user3.jpg" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>John Doe</p>
+                        </div>
+                        <div class="message-num">2</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon02.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>白兰地</p>
+                        </div>
+                        <div class="message-num">8</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon03.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>威士忌</p>
+                        </div>
+                        <div class="message-num">2</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon01.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>荷兰金酒</p>
+                        </div>
+                        <div class="message-num">20</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon03.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>朗姆酒</p>
+                        </div>
+                        <div class="message-num">10</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon02.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>特其拉酒</p>
+                        </div>
+                        <div class="message-num">18</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon02.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>鸡尾酒</p>
+                        </div>
+                        <div class="message-num">9</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon01.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>虎骨酒</p>
+                        </div>
+                        <div class="message-num">12</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon01.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>琴酒</p>
+                        </div>
+                        <div class="message-num">99+</div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon02.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>葡萄酒</p>
+                        </div>
+                        <div class="message-num"></div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon01.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>蓝莓酒</p>
+                        </div>
+                        <div class="message-num"></div>
+                    </div>
+                    <div class="chat-list-people">
+                        <div><img src="img/icon03.png" alt="头像"/></div>
+                        <div class="chat-name">
+                            <p>樱花酒</p>
+                        </div>
+                        <div class="message-num"></div>
+                    </div>
+                </div>
+                <div class="chatBox-kuang" ref="chatBoxkuang">
+                    <div class="chatBox-content">
+                        <div class="chatBox-content-demo" id="chatBox-content-demo">
+    
+                            <div class="clearfloat">
+                                <div class="author-name">
+                                    <small class="chat-date">20020-5-02 14:26:58</small>
+                                </div>
+                                <div class="left">
+                                    <div class="chat-avatars"><img src="images/user3.jpg" alt="头像"/></div>
+                                    <div class="chat-message">
+                                        小姐姐你好，喜欢可以直接拍下！
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="clearfloat">
+                                <div class="author-name">
+                                    <small class="chat-date">2020-5-02 14:26:58</small>
+                                </div>
+                                <div class="left">
+                                    <div class="chat-avatars"><img src="images/user3.jpg" alt="头像"/></div>
+                                    <div class="chat-message">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="clearfloat">
+                                <div class="author-name">
+                                    <small class="chat-date">2020-5-02 14:26:58</small>
+                                </div>
+                                <div class="right">
+                                    <div class="chat-message">你好</div>
+                                    <div class="chat-avatars"><img src="images/tuo.png" alt="头像"/></div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="chatBox-send">
+                        <div class="div-textarea" contenteditable="true"></div>
+                        <div>
+                            <button id="chat-biaoqing" class="btn-default-styles">
+                                <i class="iconfont icon-biaoqing"></i>
+                            </button>
+                            <label id="chat-tuxiang" title="发送图片" for="inputImage" class="btn-default-styles">
+                                <input type="file" onchange="selectImg(this)" accept="image/jpg,image/jpeg,image/png"
+                                       name="file" id="inputImage" class="hidden">
+                                <i class="iconfont icon-tuxiang"></i>
+                            </label>
+                            <button id="chat-fasong" class="btn-default-styles"><i class="iconfont icon-fasong"></i>
+                            </button>
+                        </div>
+                        <div class="biaoqing-photo">
+                            <ul>
+                                <li><span class="emoji-picker-image" style="background-position: -9px -18px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -40px -18px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -71px -18px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -102px -18px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -133px -18px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -164px -18px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -9px -52px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -40px -52px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -71px -52px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -102px -52px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -133px -52px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -164px -52px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -9px -86px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -40px -86px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -71px -86px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -102px -86px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -133px -86px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -164px -86px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -9px -120px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -40px -120px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -71px -120px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -102px -120px;"></span>
+                                </li>
+                                <li><span class="emoji-picker-image" style="background-position: -133px -120px;"></span>
+                                </li>
+                                <li><span class="emoji-picker-image" style="background-position: -164px -120px;"></span>
+                                </li>
+                                <li><span class="emoji-picker-image" style="background-position: -9px -154px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -40px -154px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -71px -154px;"></span></li>
+                                <li><span class="emoji-picker-image" style="background-position: -102px -154px;"></span>
+                                </li>
+                                <li><span class="emoji-picker-image" style="background-position: -133px -154px;"></span>
+                                </li>
+                                <li><span class="emoji-picker-image" style="background-position: -164px -154px;"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> 
+    <script src="js/jquery.exzoom.js"></script> 
+
+    <!-- 放大镜 -->
+    <script type="text/javascript">
+    $(function(){
+        $("#exzoom").exzoom({
+                autoPlay: false,
+            });// 方法调用，务必在加载完后执行
+    })            
+    </script>
+    
+     <!-- 收藏功能   -->
+	<script>
+	$(document).ready(function()
+	{
+    
+	$('body').on("click",'.heart',function()
+    {
+    	
+    	var A=$(this).attr("id");
+    	var B=A.split("like");
+        var messageID=B[1];
+        var C=parseInt($("#likeCount"+messageID).html());
+    	$(this).css("background-position","")
+        var D=$(this).attr("rel");
+       
+        if(D === 'like') 
+        {      
+        $("#likeCount"+messageID).html(C+1);
+        $(this).addClass("heartAnimation").attr("rel","unlike");
+        
+        }
+        else
+        {
+        $("#likeCount"+messageID).html(C-1);
+        $(this).removeClass("heartAnimation").attr("rel","like");
+        $(this).css("background-position","left");
+        }
+
+
+    });
+
+
+	});
+    </script>
+    <script>
+
+        screenFuc();
+        function screenFuc() {
+            var topHeight = $(".chatBox-head").innerHeight();//聊天头部高度
+            //屏幕小于768px时候,布局change
+            var winWidth = $(window).innerWidth();
+            if (winWidth <= 768) {
+                var totalHeight = $(window).height(); //页面整体高度
+                $(".chatBox-info").css("height", totalHeight - topHeight);
+                var infoHeight = $(".chatBox-info").innerHeight();//聊天头部以下高度
+                //中间内容高度
+                $(".chatBox-content").css("height", infoHeight - 46);
+                $(".chatBox-content-demo").css("height", infoHeight - 46);
+    
+                $(".chatBox-list").css("height", totalHeight - topHeight);
+                $(".chatBox-kuang").css("height", totalHeight - topHeight);
+                $(".div-textarea").css("width", winWidth - 106);
+            } else {
+                $(".chatBox-info").css("height", 495);
+                $(".chatBox-content").css("height", 448);
+                $(".chatBox-content-demo").css("height", 448);
+                $(".chatBox-list").css("height", 495);
+                $(".chatBox-kuang").css("height", 495);
+                $(".div-textarea").css("width", 260);
+            }
+        }
+        (window.onresize = function () {
+            screenFuc();
+        })();
+        //未读信息数量为空时
+        var totalNum = $(".chat-message-num").html();
+        if (totalNum == "") {
+            $(".chat-message-num").css("padding", 0);
+        }
+        $(".message-num").each(function () {
+            var wdNum = $(this).html();
+            if (wdNum == "") {
+                $(this).css("padding", 0);
+            }
+        });
+    
+    
+        //打开/关闭聊天框
+        $(".chatBtn").click(function () {
+            $(".chatBox").toggle(10);
+        })
+        $(".chat-close").click(function () {
+            $(".chatBox").toggle(10);
+        })
+        //进聊天页面
+        $(".but").click(function () {
+            $(".chatBox").toggle(10);
+        })
+        $(".but").each(function () {
+            $(this).click(function () {
+                var n = $(this).index();
+                $(".chatBox-head-one").toggle();
+                $(".chatBox-head-two").toggle();
+                $(".chatBox-list").fadeToggle();
+                $(".chatBox-kuang").fadeToggle();
+    
+                //传名字
+                $(".ChatInfoName").text($(this).children(".chat-name").children("p").eq(0).html());
+    
+                //传头像
+                $(".ChatInfoHead>img").attr("src", $(this).children().eq(0).children("img").attr("src"));
+    
+                //聊天框默认最底部
+                $(document).ready(function () {
+                    $("#chatBox-content-demo").scrollTop($("#chatBox-content-demo")[0].scrollHeight);
+                });
+            })
+        });
+        $(".chat-list-people").each(function () {
+            $(this).click(function () {
+                var n = $(this).index();
+                $(".chatBox-head-one").toggle();
+                $(".chatBox-head-two").toggle();
+                $(".chatBox-list").fadeToggle();
+                $(".chatBox-kuang").fadeToggle();
+    
+                //传名字
+                $(".ChatInfoName").text($(this).children(".chat-name").children("p").eq(0).html());
+    
+                //传头像
+                $(".ChatInfoHead>img").attr("src", $(this).children().eq(0).children("img").attr("src"));
+    
+                //聊天框默认最底部
+                $(document).ready(function () {
+                    $("#chatBox-content-demo").scrollTop($("#chatBox-content-demo")[0].scrollHeight);
+                });
+            })
+        });
+    
+        //返回列表
+        $(".chat-return").click(function () {
+            $(".chatBox-head-one").toggle(1);
+            $(".chatBox-head-two").toggle(1);
+            $(".chatBox-list").fadeToggle(1);
+            $(".chatBox-kuang").fadeToggle(1);
+        });
+    
+        //      发送信息
+        $("#chat-fasong").click(function () {
+            var textContent = $(".div-textarea").html().replace(/[\n\r]/g, '<br>')
+            if (textContent != "") {
+                $(".chatBox-content-demo").append("<div class=\"clearfloat\">" +
+                    "<div class=\"author-name\"><small class=\"chat-date\">2017-12-02 14:26:58</small> </div> " +
+                    "<div class=\"right\"> <div class=\"chat-message\"> " + textContent + " </div> " +
+                    "<div class=\"chat-avatars\"><img src=\"images/tuo.png\" alt=\"头像\" /></div> </div> </div>");
+                //发送后清空输入框
+                $(".div-textarea").html("");
+                //聊天框默认最底部
+                $(document).ready(function () {
+                    $("#chatBox-content-demo").scrollTop($("#chatBox-content-demo")[0].scrollHeight);
+                });
+            }
+        });
+    
+        //      发送表情
+        $("#chat-biaoqing").click(function () {
+            $(".biaoqing-photo").toggle();
+        });
+        $(document).click(function () {
+            $(".biaoqing-photo").css("display", "none");
+        });
+        $("#chat-biaoqing").click(function (event) {
+            event.stopPropagation();//阻止事件
+        });
+    
+        $(".emoji-picker-image").each(function () {
+            $(this).click(function () {
+                var bq = $(this).parent().html();
+                console.log(bq)
+                $(".chatBox-content-demo").append("<div class=\"clearfloat\">" +
+                    "<div class=\"author-name\"><small class=\"chat-date\">2017-12-02 14:26:58</small> </div> " +
+                    "<div class=\"right\"> <div class=\"chat-message\"> " + bq + " </div> " +
+                    "<div class=\"chat-avatars\"><img src=\"img/icon01.png\" alt=\"头像\" /></div> </div> </div>");
+                //发送后关闭表情框
+                $(".biaoqing-photo").toggle();
+                //聊天框默认最底部
+                $(document).ready(function () {
+                    $("#chatBox-content-demo").scrollTop($("#chatBox-content-demo")[0].scrollHeight);
+                });
+            })
+        });
+    
+        //      发送图片
+        function selectImg(pic) {
+            if (!pic.files || !pic.files[0]) {
+                return;
+            }
+            var reader = new FileReader();
+            reader.onload = function (evt) {
+                var images = evt.target.result;
+                $(".chatBox-content-demo").append("<div class=\"clearfloat\">" +
+                    "<div class=\"author-name\"><small class=\"chat-date\">2017-12-02 14:26:58</small> </div> " +
+                    "<div class=\"right\"> <div class=\"chat-message\"><img src=" + images + "></div> " +
+                    "<div class=\"chat-avatars\"><img src=\"img/icon01.png\" alt=\"头像\" /></div> </div> </div>");
+                //聊天框默认最底部
+                $(document).ready(function () {
+                    $("#chatBox-content-demo").scrollTop($("#chatBox-content-demo")[0].scrollHeight);
+                });
+            };
+            reader.readAsDataURL(pic.files[0]);
+    
+        }
+    
+    
+    </script>
+    
+</body>
+</html>

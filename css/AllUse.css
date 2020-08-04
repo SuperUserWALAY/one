@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+    
+    background: #f3f5f7 url(../images/all-bg.jpg) no-repeat fixed center -25px;
+    }
+    ul{
+    list-style: none;
+    }
+    a{
+    color: #050505;
+    text-decoration: none;
+    }
+    input{
+    box-sizing: border-box; /*css3盒子模型 border 和padding 都包含到width里面*/
+    border:0; /*所有表单边框为0*/
+    }
+    .clearfix:before, .clearfix:after{  /*清除浮动*/
+    display: table;
+    content: "";
+    }
+    .clearfix:after{
+    clear: both;
+    }
+    .clearfix{
+    *zoom:1;
+    }
+    /*页面头部分*/
+    header{
+        height: 80px;
+        background:rgba(255, 255, 255, 0.7);
+        overflow: hidden; /*防止外边距合并问题*/
+    }
+    nav{
+        width: 1200px;
+        height: 42px;
+        /*background-color: purple;*/
+        margin: 26px auto ; 
+    }
+    nav .logo{
+        float: left;
+    }
+    .navbar {
+        float: left;
+        height: 42px;
+        line-height: 42px;
+        margin-left: 50px; /*li标签与logo之间的距离*/
+    }
+    .navbar li{
+        float: left; /*让 首页 课程 职业规划 在同一行*/
+        
+    }
+    .navbar  li a{
+        padding: 0 8px;
+        display: block;
+        height: 41px;
+    
+    }
+    .navbar  li a:hover{
+        border-bottom:  2px solid #00a4ff;
+    
+    }
+    .search{
+        width: 290px;
+        height: 38px;
+        border: 1px solid #00a4ff;
+        float:right;
+    }
+    .search input[type=text]{
+        width: 240px;
+        height: 38px;
+        /*background-color: pink;*/
+        padding-left: 20px;
+        float: left;
+    }
+    .search input[type=submit]{
+        width: 50px;
+        height: 38px;
+        /*background-color: #00a4ff;*/
+        float: left;
+        background: #00a4ff url(../images/search_06.png) center center no-repeat;
+    }
+    .personal{
+        float: right;
+        height: 42px;
+        line-height:42px;
+        margin: 0 15px 0 35px;
+    }
+    .personal img{
+        margin: 0 8px;
+       
+    }
+    .tuo{
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+    }
+    
+    /* main */
+    .container{
+        margin: 10px auto;
+        width: 1200px;
+        height: 620px;
+        background:rgba(255, 255, 255, 0.7);
+        
+    }

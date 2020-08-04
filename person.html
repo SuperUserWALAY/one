@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户页面</title>
+    <link rel="stylesheet" href="css/AllUse.css">
+    <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/shop_int.css"> <!--全部功能样式 -->
+    <link href="css/grstyle.css" rel="stylesheet" type="text/css"/> <!--  tap栏 -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script> -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script> 
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <!-- logo部分 -->
+        <nav>
+            <div class="logo">
+            <img src="images/logo_03.png" alt="">
+            </div>
+            <!-- 导航栏部分 -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">二手书籍</a></li>
+                    <li><a href="#">生活闲置</a></li>
+                    <li><a href="school.html">闲置捐赠</a></li>
+                </ul>
+            </div>
+            <!-- 个人中心部分 -->
+            <div class="personal">
+                <a href="person.html">发布闲置<img src="images/ling.png" alt=""></a>
+                <a href="person.html"><img class="tuo" src="images/tuo.png" alt="">古川柠夏</a>
+            </div>
+                <!-- 搜索框部分 -->
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="请输入关键词"> <!-- 占位符 -->
+                    <input type="submit" value="">
+                </form>
+            </div>
+            
+        </nav>
+
+    </header>
+    <!-- 个人主页功能 -->
+    <div class="module-banner">
+        <div class="module-banner-box">
+            <div class="module-banner-tab clearfix">
+                <div class="module-banner-tab-list hd">
+                    <ul class="module-tab-nav">
+                        <!-- 个人信息 -->
+                        <div class="user">
+                            <img src="images/tuo.png" alt="">   
+                            <h2>古川柠夏</h2>
+                            <p>喜欢二次元，东野圭吾，不定期出闲置。</p>
+                        </div>
+                        <li class="on">
+                            <i class="icon icon-warehouse03"></i>
+                            <p>发布闲置</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-warehouse02"></i>
+                            <p>我发布的</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-warehouse01"></i>
+                            <p>我的收藏</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-warehouse04"></i>
+                            <p>我的交易</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-warehouse05"></i>
+                            <p>我的评价</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="module-banner-tab-list-box bd">
+                    <!-- 发布闲置 -->
+                    <ul class="module-tab-box-ma">
+                        <li>
+                            <!-- <div class="contact"> -->
+                                <form class="contact_form" action="#" method="post" name="contact_form">
+                                    <ul>
+                                        <li>
+                                             <h2>宝贝详情</h2>
+                                             <span class="required_notification">* 以下必填</span>
+                                        </li>
+                                        <li>
+                                            <label for="name">宝贝名称:</label>
+                                            <input type="text"  placeholder="二手 高等数学书" required />
+                                        </li>
+                                        <li>
+                                            <label for="number">价格 ¥:</label>
+                                            <input type="number"   placeholder="10" required />
+                                        </li>
+                                        <li>
+                                            <label for="message">交易地址:</label>
+                                            <input type="text"  placeholder="广商20栋菜鸟驿站" required />
+                                        </li>
+                                        <li>
+                                            <label for="message">描述一下宝贝吧:</label>
+                                            <textarea name="message" cols="40" rows="6" placeholder="" required ></textarea>
+                                        </li>
+                                        <p>最多上传3张图片：</p>
+		                                    <div id="cupload-create"></div>
+                                        <li>
+                                            <button class="submit" type="submit">发布闲置</button>
+                                        </li>
+                                    </ul>
+                                </form>
+                                <!-- </div> -->
+                        </li>
+                    </ul>
+                    <!-- 发布的宝贝 -->
+                    <ul class="module-tab-box-ma shop_list">
+                        <li class="shop_box shop_box1">
+                            <div class="shop_eit">
+                                <img src="images/shop3.jpg" alt="">
+                                <div class="shop_mes">
+                                    <h3>概率论</h3>
+                                    <span>¥10</span>
+                                    <p>浏览230</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shop_eits">
+                                <button>降价</button><button>编辑</button>
+                                <button class="btn_rm">删除</button>
+                            </div>
+                        </li>
+                        <li class="shop_box">
+                            <div class="shop_eit">
+                                <img src="images/shop4.jpg" alt="">
+                                <div class="shop_mes">
+                                    <h3>微积分</h3>
+                                    <span>¥10</span>
+                                    <p>浏览20</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shop_eits">
+                                <button>降价</button><button>编辑</button><button class="btn_rm">删除</button>
+                            </div>
+                        </li>
+                        <li class="shop_box">
+                            <div class="shop_eit">
+                                <img src="images/shop6.jpg" alt="">
+                                <div class="shop_mes">
+                                    <h3>口红</h3>
+                                    <span>¥39</span>
+                                    <p>浏览330</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shop_eits">
+                                <button>降价</button><button>编辑</button><button class="btn_rm">删除</button>
+                            </div>
+                        </li>
+                        <li class="shop_box">
+                            <div class="shop_eit">
+                                <img src="images/shop8.jpg" alt="">
+                                <div class="shop_mes">
+                                    <h3>解忧杂货店</h3>
+                                    <span>¥10</span>
+                                    <p>浏览230</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shop_eits">
+                                <button>降价</button><button>编辑</button><button class="btn_rm">删除</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 我的收藏 -->
+                    <ul class="module-tab-box-ma">
+                        <li>
+                           <div class="liker">
+                                <div class="buyer">
+                                    <a href="javascript:;"><img src="images/user3.jpg" alt=""> </a>
+                                    <h3>LILI</h3>
+                                    <span>¥10</span>
+                                </div>
+                                <div class="buy_shop">
+                                    <a href="shop.html"><img src="images/a1.png" alt=""></a>
+                                    <h3>全新鼠标 鼠标垫</h3>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 我的交易 -->
+                    <ul class="module-tab-box-ma">
+                        <li>
+                            <div class="buy">
+                                <h2>我卖出的</h2>
+                                <div class="buy_box">
+                                    <ul>
+                                        <li class="buyer">
+                                            <img src="images/tx2.png" alt="">
+                                            <h3>小肥猪</h3>
+                                            <span>交易成功</span>
+                                        </li>
+                                        <li class="buy_shop">
+                                            <img src="images/icon1.png" alt="">
+                                            <h3>二手书籍 高等数学</h3>
+                                            <p>实收款：<span>¥10</span></p>
+                                        </li>
+                                        <li>
+                                            <button > 联系买家</button>
+                                            <button > 评论</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="buy_box">
+                                    <ul>
+                                        <li class="buyer">
+                                            <img src="images/tx3.png" alt="">
+                                            <h3>哆啦A梦</h3>
+                                            <span>交易成功</span>
+                                        </li>
+                                        <li class="buy_shop">
+                                            <img src="images/shop7.jpg" alt="">
+                                            <h3>二手书籍 白夜行</h3>
+                                            <p>实收款：<span>¥10</span></p>
+                                        </li>
+                                        <li>
+                                            <button > 联系买家</button>
+                                            <button > 评论</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sale">
+                                <h2>我买到的</h2>
+                                <div class="buy_box">
+                                    <ul>
+                                        <li class="buyer">
+                                            <img src="images/user3.jpg" alt="">
+                                            <h3>LILI</h3>
+                                            <span>交易中</span>
+                                        </li>
+                                        <li class="buy_shop">
+                                            <img src="images/shop9.jpg" alt="">
+                                            <h3>二手书籍 四级词汇</h3>
+                                            <p>实付款：<span>¥10</span></p>
+                                        </li>
+                                        <li>
+                                            <button > 联系卖家</button>
+                                            <button > 确认收货</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="buy_box">
+                                    <ul>
+                                        <li class="buyer">
+                                            <img src="images/tuo1.png" alt="">
+                                            <h3>皮卡丘</h3>
+                                            <span>交易成功</span>
+                                        </li>
+                                        <li class="buy_shop">
+                                            <img src="images/shop10.jpg" alt="">
+                                            <h3>二手键盘</h3>
+                                            <p>实付款：<span>¥20</span></p>
+                                        </li>
+                                        <li>
+                                            <button > 联系卖家</button>
+                                            <button > 评论</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 我的评价 -->
+                    <ul class="module-tab-box-ma">
+                        <li>
+                            <div class="post__comment">
+								<a href="#" class="post__comment-img">
+									<img src="images/tuo1.png" alt="">
+								</a>
+								<div class="post__comment-title">
+									<h3><a href="#">来自金融学院的卖家</a></h3>
+									<p>20 min ago</p>
+								</div>
+								<p class="post__comment-text">
+                                    很nice的小姐姐，书本保护的很好，是一次愉快的交易！
+                                </p>
+                            </div>
+                            <div class="post__comment">
+								<a href="#" class="post__comment-img">
+									<img src="images/tx2.png" alt="">
+								</a>
+								<div class="post__comment-title">
+									<h3><a href="#">来自金融学院的卖家</a></h3>
+									<p>1 mon ago</p>
+								</div>
+								<p class="post__comment-text"> 同学很爽快，感谢收物！</p>
+                            </div>
+                            <div class="post__comment">
+								<a href="#" class="post__comment-img">
+									<img src="images/tx3.png" alt="">
+								</a>
+								<div class="post__comment-title">
+									<h3><a href="#">来自旅游学院的买家</a></h3>
+									<p>1 mon ago</p>
+								</div>
+								<p class="post__comment-text"> 这个价格的二手自行车太划算了，同学很负责，拍了挺多事物图给我看！</p>
+							</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(".module-banner-tab").slide({trigger:"click",delayTime:1000});
+    </script>
+  
+    <!-- 发布闲置上传图片 -->
+    <script src="js/cupload.js"></script>
+	<script type="text/javascript">
+		var cuploadCreate = new Cupload ({
+			ele: '#cupload-create',
+			num: 3,
+		});
+         
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+  $(".btn_rm").click(function(){
+    $("li").remove(".shop_box1");
+  });
+});
+    </script>
+ 
+</body>
+</html>

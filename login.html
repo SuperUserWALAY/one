@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="zh" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <section>				
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <a class="hiddenanchor" id="topasswordchange"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1>登录</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > 您的邮箱 或 用户名 </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="username or yourmail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> 您的密码 </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="Your password" /> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                                    <label for="loginkeeping">记住我的密码</label>
+                                    
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="登录" /> 
+								</p>
+                                <p class="change_link">
+                                    <a href="#topasswordchange" class="to_register">忘记密码？</a>
+                                    还没有账号吗 ?
+                                    
+                                    <a href="#toregister" class="to_register">加入我们吧</a>
+                                    
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> 注册 </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">您的用户名</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="uesrname" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > 您的邮箱</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="Yourmail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">您的密码 </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="Your password"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">请确认您的密码 </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="Your password"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="注册"/> 
+								</p>
+                                <p class="change_link">  
+									已经有账号 ?
+									<a href="#tologin" class="to_register"> 点击登录吧 </a>
+								</p>
+                            </form>
+                        </div>
+                        <div id="passwordchange" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> 找回密码 </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">您绑定的邮箱/手机</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Your bound mail" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > 验证码</label>
+                                    <a href="" class="to_register" style="float: right;"> 发送验证码 </a>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="输入验证码"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">重新设置密码 </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="Your new password"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">请确认您的密码 </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="Your new password"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="确认修改"/> 
+								</p>
+                                <p class="change_link">  
+									修改成功 ?
+									<a href="#tologin" class="to_register"> 点击登录吧 </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>

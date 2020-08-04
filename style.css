@@ -1,0 +1,403 @@
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    body{
+        background-color: #f3f5f7;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        color: #050505;
+        text-decoration: none;
+    }
+    input{
+        box-sizing: border-box; /*css3盒子模型 border 和padding 都包含到width里面*/
+        border:0; /*所有表单边框为0*/
+    }
+    .clearfix:before, .clearfix:after{  /*清除浮动*/
+        display: table;
+        content: "";
+    }
+    .clearfix:after{
+        clear: both;
+    }
+    .clearfix{
+        *zoom:1;
+    }
+    
+    	/*页面头部分*/
+	header{
+        position:absolute;
+        z-index:9999;/*设置优先级*/
+        height: 130px;
+        width: 100%;
+		/*background-color: pink;*/
+        overflow: hidden; /*防止外边距合并问题*/
+        font-size: 16px;
+        font-weight: 700;
+    }
+    header:hover{
+        background-color: #fff;
+        background: rgba(255, 255, 255, 0.5);
+    }
+	nav{
+		width: 1200px;
+		height: 60px;
+		/*background-color: purple;*/
+		margin: 26px auto ; 
+	}
+	nav .logo{
+		float: left;
+	}
+	.navbar {
+		float: left;
+		height: 42px;
+		line-height: 42px;
+		margin-left: 50px; /*li标签与logo之间的距离*/
+	}
+	.navbar li{
+		float: left; /*让 首页 课程 职业规划 在同一行*/
+		
+	}
+	.navbar  li a{
+		padding: 0 8px;
+		display: block;
+		height: 41px;
+        
+    }
+    .navbar li .box a:hover, .navbar li .box a.current{background:rgba(255, 255, 255, 0.7);color:#000;}
+	.navbar  li a:hover{
+        z-index:9999;/*设置优先级*/
+		border-bottom:  2px solid #00a4ff;
+
+    }
+    .navbar li .box{
+        z-index:1;/*设置优先级*/
+        width:100%;
+        height:50px;
+        position:absolute;
+        top:80px;left:203px;
+        *left:190px;left:198px\0;
+        /* background:#000; */
+        display:none;
+        background:rgba(255, 255, 255, 0.7);
+    }
+    .navbar li .box a{
+        display:block;height:50px;float:left;color:#050505;
+        line-height:50px;border:none;
+        padding:0;width:118px;text-align:center;
+    }
+    .navbar li .box a:hover{
+        z-index:1;/*设置优先级*/
+        color:#00a4ff;
+    }
+	.search{
+		width: 290px;
+		height: 38px;
+		border: 1px solid #00a4ff;
+		float:right;
+	}
+	.search input[type=text]{
+		width: 240px;
+		height: 38px;
+		/*background-color: pink;*/
+		padding-left: 20px;
+		float: left;
+	}
+	.search input[type=submit]{
+		width: 50px;
+		height: 38px;
+		/*background-color: #00a4ff;*/
+		float: left;
+		background: #00a4ff url(images/search_06.png) center center no-repeat;
+	}
+	.personal{
+		float: right;
+		height: 42px;
+		line-height:42px;
+		margin: 0 15px 0 35px;
+	}
+	.personal img{
+		margin: 0 8px;
+    }
+    .tuo{
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+    }
+    .personal a:hover{
+        color: #00a4ff;
+    }
+   
+    /* focus banner部分*/
+
+    .xmSlide {
+        text-indent: -999px;
+        background-color: #e5ecf0;
+
+    }
+
+    .xmSlide_01 {
+
+        height: 100%;
+
+        background: url(images/focus01.jpg) no-repeat center center;
+
+    }
+
+    .xmSlide_02 {
+
+        height:100%;
+
+        background: url(images/focus02.jpg) no-repeat center center;
+
+    }
+
+    .xmSlide_03 {
+
+        height: 100%;
+
+        background: url(images/focus03.jpg) no-repeat center center;
+
+    }
+
+    .xmSlide-pagination {
+
+        background-color: #fff;
+
+        padding-top: 10px;
+
+        text-align: center;
+
+        height: 20px;
+
+    }
+
+    .xmSlide-pagination li {
+
+        display: inline-block;
+
+        width: 12px;
+
+        height: 12px;
+
+        margin: 0 5px;
+
+    }
+
+    .xmSlide-pagination li a {
+
+        display: inline-block;
+
+        width: 12px;
+
+        height: 12px;
+
+        text-indent: -9999px;
+
+        background-color: #ccd1d9;
+
+        border-radius: 8px;
+
+        -moz-border-radius: 8px;
+
+        -webkit-border-radius: 8px;
+
+        overflow: hidden;
+        margin-left:1450px;
+
+    }
+
+    .xmSlide-pagination li a.active {
+
+        background-color: #656d78;
+
+    }
+
+    .xmSlide-control {
+
+        overflow: hidden;
+
+    }
+
+ 
+    .container{
+		width: 1200px;
+		margin: 0 auto;
+    }
+    /*学院交流*/
+	.reconmmend{
+        position: relative;
+		height: 60px;
+		background-color: #fff;
+		box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+		margin-top: 8px;
+		line-height: 60px;
+
+	}
+	.reconmmend a{
+		color: #050505;
+		border-left: 1px solid #797d7f;
+		padding: 0 30px;
+	}
+	.reconmmend a:hover{
+		color: #00a4ff;
+	}
+	.reconmmend a:first-child{
+		border: 0;
+		color: #00a4ff;
+		font-weight: 700;
+	}
+	.reconmmend a:last-child{
+		color: #00a4ff;
+		font-size: 14px;
+		float: right;
+		border: 0;
+    }
+    /* 商品推荐 */
+    .recm_pd{
+		margin-top: 30px;
+	}
+	.recm_hd{
+		
+		height: 40px; 
+		background-color: #f3f5f7;
+	}
+	.recm_hd h4{
+		float: left;
+	}
+	.recm_hd a{
+		color: #a9a9a9;
+		font-size: 12px;
+		float: right;
+		margin-top: 10px;
+		margin-right: 30px;
+	}
+	.recm_hd  a:hover{
+		color: #00a4ff;
+	}
+   /* 商品列表 */
+   .recm_bd ul li{
+    width: 228px;
+    /* height: 300px; */
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    transition: all 0.2s;
+    }
+    .recm_bd ul li:hover{
+        margin-top: 10px;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+        
+    }
+
+    .recm_bd ul li:nth-child(5n){
+        margin-right: 0;
+    }
+    .recm_bd ul li h5,
+    .recm_bd ul li p {
+        padding: 0 24px 0px 20px;
+        margin-top: 12px;
+        line-height: 24px;
+    }
+    .recm_bd ul li h5{
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .recm_bd ul li p{
+        font-size: 14px;
+        color: #999999;
+    }
+    .recm_bd img{
+        width: 227px;
+        height: 200px;
+    }
+    .recm_bd  p span{
+        font-size: 24px;
+        font-weight: 700;
+        height: 40px;
+        line-height: 40px;
+        color: #ff7c2d;
+    }
+    .recm_bd ul li button{
+        width: 70px;
+        height: 40px;
+        float: right;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #00a4ff;
+        font-size: 18px;
+    }
+    .recm_bd .touxian {
+        width: 20px;
+        height:20px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    /* 校园捐赠 */
+   /* wrap */
+.wrap{margin:50px auto;width:1134px;height:437px;position:relative;overflow:hidden;}
+.pic{width:679px;height:437px;cursor:pointer;}
+.pic1{background:url('images/01.png');position:absolute;top:0;left:0;z-index:1;}
+.pic_num1{width:74px;height:79px;position:absolute;top:40px;left:17px;background:url('images/pic_num.jpg');background-position:0 0;display:none;}
+.pic2{background:url('images/02.png');position:absolute;top:0;left:679px;z-index:3;}
+.pic_num2{width:74px;height:79px;position:absolute;top:40px;left:17px;background:url('images/pic_num.jpg');background-position:-69px 0;}
+.pic3{background:url('images/03.png');position:absolute;top:0;left:770px;z-index:5;}
+.pic_num3{width:74px;height:79px;position:absolute;top:40px;left:17px;background:url('images/pic_num.jpg');background-position:-138px 0;}
+.pic4{background:url('images/04.png');position:absolute;top:0;left:861px;z-index:7;}
+.pic_num4{width:74px;height:79px;position:absolute;top:40px;left:17px;background:url('images/pic_num.jpg');background-position:-207px 0;}
+.pic5{background:url('images/05.png');position:absolute;top:0;left:952px;z-index:9;}
+.pic_num5{width:73px;height:79px;position:absolute;top:40px;left:18px;background:url('images/pic_num.jpg');background-position:-276px 0;}
+.pic6{background:url('images/06.png');position:absolute;top:0;left:1043px;z-index:11;}
+.pic_num6{width:73px;height:79px;position:absolute;top:40px;left:18px;background:url('images/pic_num.jpg');background-position:-345px 0;}
+/* 底部 */
+footer{
+    height: 200px;
+    background-color: #fff;
+    margin-top:100px;
+}
+.footer-l {
+    float: left;
+}
+.footer-l p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+    margin-top: 20px;
+}
+.footer-l a {
+    display: block;
+    width:118px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid  #00a4ff;
+    text-align: center;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.footer-r {
+    float: right;
+    color: #333;
+}
+.footer-r dl{
+    float: left;
+    width: 225px;
+}
+.footer-r dt{
+    font-size: 16px;
+    height: 30px;
+}
+.footer-r dd{
+    font-size: 12px;
+    height: 20px;
+}
+.footer-r dd a:hover {
+    color: #00a4ff;
+    text-decoration: underline;
+}
